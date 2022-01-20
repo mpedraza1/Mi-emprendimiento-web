@@ -1,0 +1,18 @@
+.footer{
+    height: 5rem;
+
+}
+footer{
+    background-color: $black;
+    color: $white;
+    
+}
+.final{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+button{
+    background-color: $orange;
+}

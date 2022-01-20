@@ -1,0 +1,50 @@
+.us-image {
+  margin: 1rem;
+  width: 15rem;
+  border-radius: 50%;
+  border: 1px solid $sable;
+}
+.section2 {
+  margin: 1rem 1rem 1rem 1rem;
+  padding-right: 2rem;
+  border: 2px solid $sable;
+  text-align: center;
+  height: 53rem;
+  margin-top: 3rem;
+ // width: 40rem;
+ 
+}
+h2{
+  font-family: $poppinsRegular;
+}
+p{
+  font-family: $ubuntuRegular;
+  font-size: $small;
+  text-align: justify;
+  //width: 39rem;
+  
+}
+.more-courses {
+  &__title {
+    background-color: $sable;
+    color: $white;
+    font-family: $poppinsRegular;
+    padding: 0.2rem;    
+   // width: 39rem;
+    
+  }
+  &__details {
+    padding-top:1rem;
+    list-style: circle;
+    text-align: left;
+    font-family: $poppinsRegular;
+    padding: 1rem 1rem 1rem 1rem;
+  }
+}
+.us {
+  &__more-courses {
+    padding: 1rem 1rem 1rem 1rem;
+    
+  }
+}
+

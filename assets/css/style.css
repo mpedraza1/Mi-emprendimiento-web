@@ -1,0 +1,441 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+@keyframes move {
+  0% {
+    transform: translateX(150px);
+    -webkit-transform: translateX(150px);
+    -moz-transform: translateX(150px);
+    -ms-transform: translateX(150px);
+    -o-transform: translateX(150px);
+  }
+  100% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+.rotate {
+  animation: rotate 3s infinite linear;
+  -webkit-animation: rotate 3s infinite linear;
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+}
+
+.move {
+  animation: move 2s infinite linear alternate;
+  -webkit-animation: move 2s infinite linear alternate;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.box {
+  margin: 1rem 1rem 1rem 1rem;
+  padding: 0.5rem;
+  border: 1px solid #000000;
+}
+
+.col-12 {
+  grid-column: span 12;
+}
+
+.col-11 {
+  grid-column: span 11;
+}
+
+.col-10 {
+  grid-column: span 10;
+}
+
+.col-9 {
+  grid-column: span 9;
+}
+
+.col-8 {
+  grid-column: span 8;
+}
+
+.col-7 {
+  grid-column: span 7;
+}
+
+.col-6 {
+  grid-column: span 6;
+}
+
+.col-5 {
+  grid-column: span 5;
+}
+
+.col-4 {
+  grid-column: span 4;
+}
+
+.col-3 {
+  grid-column: span 3;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+
+.col-1 {
+  grid-column: span 1;
+}
+
+@media (max-width: 425px) {
+  sm .col-sm-12 {
+    grid-column: span 12;
+  }
+
+  .col-sm-11 {
+    grid-column: span 11;
+  }
+
+  .col-sm-10 {
+    grid-column: span 10;
+  }
+
+  .col-sm-9 {
+    grid-column: span 9;
+  }
+
+  .col-sm-8 {
+    grid-column: span 8;
+  }
+
+  .col-sm-7 {
+    grid-column: span 7;
+  }
+
+  .col-sm-6 {
+    grid-column: span 6;
+  }
+
+  .col-sm-5 {
+    grid-column: span 5;
+  }
+
+  .col-sm-4 {
+    grid-column: span 4;
+  }
+
+  .col-sm-3 {
+    grid-column: span 3;
+  }
+
+  .col-sm-2 {
+    grid-column: span 2;
+  }
+
+  .col-sm-1 {
+    grid-column: span 1;
+  }
+}
+@media (min-width: 768px) {
+  md .col-md-12 {
+    grid-column: span 12;
+  }
+
+  .col-md-11 {
+    grid-column: span 11;
+  }
+
+  .col-md-10 {
+    grid-column: span 10;
+  }
+
+  .col-md-9 {
+    grid-column: span 9;
+  }
+
+  .col-md-8 {
+    grid-column: span 8;
+  }
+
+  .col-md-7 {
+    grid-column: span 7;
+  }
+
+  .col-md-6 {
+    grid-column: span 6;
+  }
+
+  .col-md-5 {
+    grid-column: span 5;
+  }
+
+  .col-md-4 {
+    grid-column: span 4;
+  }
+
+  .col-md-3 {
+    grid-column: span 3;
+  }
+
+  .col-md-2 {
+    grid-column: span 2;
+  }
+
+  .col-md-1 {
+    grid-column: span 1;
+  }
+}
+@media (min-width: 1200px) {
+  lg .col-lg-12 {
+    grid-column: span 12;
+  }
+
+  .col-lg-11 {
+    grid-column: span 11;
+  }
+
+  .col-lg-10 {
+    grid-column: span 10;
+  }
+
+  .col-lg-9 {
+    grid-column: span 9;
+  }
+
+  .col-lg-8 {
+    grid-column: span 8;
+  }
+
+  .col-lg-7 {
+    grid-column: span 7;
+  }
+
+  .col-lg-6 {
+    grid-column: span 6;
+  }
+
+  .col-lg-5 {
+    grid-column: span 5;
+  }
+
+  .col-lg-4 {
+    grid-column: span 4;
+  }
+
+  .col-lg-3 {
+    grid-column: span 3;
+  }
+
+  .col-lg-2 {
+    grid-column: span 2;
+  }
+
+  .col-lg-1 {
+    grid-column: span 1;
+  }
+}
+.navbar {
+  background-color: #000000;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+.navbar__item {
+  list-style: none;
+  margin: 0 1rem;
+}
+.navbar__link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.navbar__list {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.navbar__logo--size {
+  width: 3rem;
+  padding: 1rem;
+}
+
+.section__description {
+  margin: 1rem;
+}
+
+.image {
+  width: 100%;
+  height: 9rem;
+}
+
+.course__details {
+  font-family: "Ubuntu", sans-serif;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+/*p{
+    width: 37rem;
+} */
+h3 {
+  font-weight: 700;
+}
+
+i {
+  padding-right: 1rem;
+}
+
+.section1 {
+  margin: 1rem 1rem 1rem 1rem;
+  padding-right: 2rem;
+  border: 2px solid #060606;
+  text-align: center;
+}
+
+.us-image {
+  margin: 1rem;
+  width: 15rem;
+  border-radius: 50%;
+  border: 1px solid #060606;
+}
+
+.section2 {
+  margin: 1rem 1rem 1rem 1rem;
+  padding-right: 2rem;
+  border: 2px solid #060606;
+  text-align: center;
+  height: 53rem;
+  margin-top: 3rem;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.more-courses__title {
+  background-color: #060606;
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  padding: 0.2rem;
+}
+.more-courses__details {
+  padding-top: 1rem;
+  list-style: circle;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.us__more-courses {
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.footer {
+  height: 5rem;
+}
+
+footer {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.final {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+button {
+  background-color: #FFA500;
+}
+
+.header {
+  text-align: center;
+  /* &__img {
+
+     &--size {
+         width: 35rem;
+
+     }
+   }*/
+}
+
+/*# sourceMappingURL=style.css.map */
