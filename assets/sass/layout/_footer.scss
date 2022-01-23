@@ -1,18 +1,12 @@
 .footer{
-    height: 5rem;
-
-}
-footer{
     background-color: $black;
     color: $white;
-    
-}
-.final{
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem;
+    font-family: $poppinsRegular;
+    font-size: $x-small;
+    padding: 0rem 7rem;
+   
 }
 
-button{
-    background-color: $orange;
-}
+
+
+

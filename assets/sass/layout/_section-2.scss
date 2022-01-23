@@ -1,50 +1,50 @@
+//COLUMNA DERECHA
+.section2 {
+  margin: 1rem 1rem 1rem 1rem;
+  border: 2px solid $sable;
+  text-align: center;
+}
 .us-image {
   margin: 1rem;
-  width: 15rem;
+  width: 8rem;
   border-radius: 50%;
   border: 1px solid $sable;
 }
-.section2 {
-  margin: 1rem 1rem 1rem 1rem;
-  padding-right: 2rem;
-  border: 2px solid $sable;
-  text-align: center;
-  height: 53rem;
-  margin-top: 3rem;
- // width: 40rem;
- 
-}
-h2{
+
+h2 {
   font-family: $poppinsRegular;
+  padding-bottom: 1rem;
 }
-p{
+
+p {
   font-family: $ubuntuRegular;
   font-size: $small;
   text-align: justify;
-  //width: 39rem;
-  
+  padding: 1rem;
 }
+
 .more-courses {
   &__title {
     background-color: $sable;
     color: $white;
     font-family: $poppinsRegular;
-    padding: 0.2rem;    
-   // width: 39rem;
-    
+    padding: 0.2rem;
   }
+
   &__details {
-    padding-top:1rem;
+    padding-top: 1rem;
     list-style: circle;
     text-align: left;
     font-family: $poppinsRegular;
     padding: 1rem 1rem 1rem 1rem;
+
+    a {
+      text-decoration: none;
+    }
   }
 }
 .us {
   &__more-courses {
     padding: 1rem 1rem 1rem 1rem;
-    
   }
 }
-

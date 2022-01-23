@@ -6,14 +6,13 @@
     
   &__container {
     display: flex;
-    justify-content: center;
     align-items: center;
     font-family: $poppinsBold;
-    font-size: $medium;
+   
   }
   &__item {
     list-style: none;
-    margin:0 1rem;
+    padding:1rem;
   }
   &__link{
       text-decoration: none;
@@ -31,3 +30,14 @@
     }
   }
 }
+
+.bar-btn{
+  font-size: $xx-large;
+  
+}
+
+.nav__input{
+  display: none;
+}
+
+
